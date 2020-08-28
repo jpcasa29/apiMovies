@@ -9,8 +9,8 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(cors())
 
-app.use('/movies', moviesRouter);
-app.use('/actors', actorsRouter);
+app.use('/api/movies', moviesRouter);
+app.use('/api/actors', actorsRouter);
 
 
 app.listen(3000, function() {
